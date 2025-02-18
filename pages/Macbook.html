@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ifan Store - iPhone</title>
+    <link rel="stylesheet" href="../styles/iphone.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="main.html">📱 Ifan Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tải ứng dụng</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Chi nhánh</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">🔍</button>
+        </form>
+    </div>
+</nav>
+<header class="text-center text-white py-5 mt-5">
+    <h1 class="intro">🔥 Chào mừng đến với Ifan Store 🔥</h1>
+    <p class="lead">Cửa hàng Macbook chính hãng - Giá tốt nhất thị trường!</p>
+</header>
+<div class="container my-5">
+    <div class="row g-4">
+        <script>
+            const products = [
+                { name: "Macbook Air M2 2024", price: "24.990.000 VNĐ", img: "/pictures/Macbook/mbam2.webp" },
+                { name: "Macbook Pro 14 M4 MAX 1TB", price: "77.990.000 VNĐ", img: "/pictures/Macbook/ip8.webp" },
+                { name: "Macbook Air M3 2024", price: "27.990.000 VNĐ", img: "/pictures/Macbook/mbam3.webp" },
+                { name: "Macbook Pro M4", price: "39.990.000 VNĐ", img: "/pictures/Macbook/mbpm4.webp" },
+                { name: "MacBook Pro M4 Nano", price: "48.990.000 VNĐ", img: "/pictures/Macbook/ip13p.webp" },
+                { name: "Macbook Air M3 15 inch", price: "42.990.000 VNĐ", img: "/pictures/Macbook/ip12pm.webp" },
+                { name: "Macbook Air M2 8CPU 10GPU", price: "29.990.000 VNĐ", img: "/pictures/Macbook/ip14.webp" },
+                { name: "Macbook Air M1", price: "20.990.000 VNĐ", img: "/pictures/Macbook/mbam1.webp" },
+                { name: "Macbook Pro 16 M3 Max", price: "66.000.000 VNĐ", img: "/pictures/Macbook/ip14pl.webp" },
+                { name: "Macbook Pro M4 Pro", price: "72.990.000 VNĐ", img: "/pictures/Macbook/ip12.webp" },
+                { name: "Macbook Air M2 2022", price: "18.990.000 VNĐ", img: "/pictures/Macbook/ip11pm.webp" },
+                { name: "Macbook Air M2 Cũ Đẹp", price: "10.990.000 VNĐ", img: "/pictures/Macbook/ip11p.webp" },
+                { name: "Macbook Pro 13 Touch Bar M1", price: "18.990.000 VNĐ", img: "/pictures/Macbook/XS.webp" },
+                { name: "Macbook Air M1 Cũ Đẹp", price: "12.999.000 VNĐ", img: "/pictures/Macbook/ipse.webp" },
+                { name: "Macbook Air M2 2023", price: "23.499.000 VNĐ", img: "/pictures/Macbook/ip8p.webp" }
+            ];
+            
+            document.write(products.map(product => `
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="${product.img}" class="card-img-top" alt="${product.name}">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">📱 ${product.name}</h5>
+                            <p class="card-text">Giá: ${product.price}</p>
+                            <button class="btn btn-primary">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            `).join(''));
+        </script>
+    </div>
+</div>
+<footer class="text-center text-white py-4">
+    <p>© 2025 Ifan Store - Bản quyền thuộc về cửa hàng.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

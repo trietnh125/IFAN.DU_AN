@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ifan Store - iPad</title>
+    <link rel="stylesheet" href="../styles/ipad.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="main.html">📱 Ifan Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tải ứng dụng</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Chi nhánh</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">🔍</button>
+        </form>
+    </div>
+</nav>
+
+<!-- Banner -->
+<header class="text-center text-white py-5 mt-5">
+    <h1 class="intro">🔥 Chào mừng đến với Ifan Store 🔥</h1>
+    <p class="lead">Cửa hàng iPad chính hãng - Giá tốt nhất thị trường!</p>
+</header>
+
+<!-- Danh sách sản phẩm -->
+<div class="container my-5">
+    <div class="row g-4">
+        <!-- Sản phẩm iPhone -->
+        <script>
+            const products = [
+                { name: "Ipad Air 6 M2", price: "16.990.000 VNĐ", img: "/pictures/ipad/ip6m2.webp" },
+                { name: "Ipad Gen 10 2022", price: "12.990.000 VNĐ", img: "/pictures/ipad/ipg10.webp"  },
+                { name: "Ipad Mini 7", price: "13.990.000 VNĐ", img: "/pictures/ipad/ipm7.webp" },
+                { name: "Ipad Pro M4 11 inch", price: "28.990.000 VNĐ", img: "/pictures/ipad/ippm4.webp" },
+                { name: "Ipad Pro M2  2022", price: "23.990.000 VNĐ", img: "/pictures/ipad/ippm2.webp" },
+                { name: "Ipad 10.2 2021", price: "8.990.000 VNĐ", img: "/pictures/ipad/ip2021.webp" },
+                { name: "Ipad Mini 6", price: "11.990.000 VNĐ", img: "/pictures/ipad/ipmn6.webp" },
+                { name: "Ipad Pro M4 13 inch", price: "38.990.000 VNĐ", img: "/pictures/ipad/ipm413.webp" },
+                { name: "Ipad Mini 7", price: "17.000.000 VNĐ", img: "/pictures/ipad/ipmn7.webp" },
+                { name: "Ipad mini 6 LTE 4G", price: "16.990.000 VNĐ", img: "/pictures/ipad/iplte.webp" },
+            ];
+            
+            document.write(products.map(product => `
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="${product.img}" class="card-img-top" alt="${product.name}">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">📱 ${product.name}</h5>
+                            <p class="card-text">Giá: ${product.price}</p>
+                            <button class="btn btn-primary">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            `).join(''));
+        </script>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center text-white py-4">
+    <p>© 2025 Ifan Store - Bản quyền thuộc về cửa hàng.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

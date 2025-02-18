@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ifan Store - iPhone</title>
+    <link rel="stylesheet" href="../styles/iphone.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="main.html">📱 Ifan Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tải ứng dụng</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Chi nhánh</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">🔍</button>
+        </form>
+    </div>
+</nav>
+
+<!-- Banner -->
+<header class="text-center text-white py-5 mt-5">
+    <h1 class="intro">🔥 Chào mừng đến với Ifan Store 🔥</h1>
+    <p class="lead">Cửa hàng iPhone chính hãng - Giá tốt nhất thị trường!</p>
+</header>
+<div class="container my-5">
+    <div class="row g-4">
+        <script>
+            const products = [
+                { name: "iPhone 16 Pro Max", price: "38.990.000 VNĐ", img: "/pictures/iphone/ip16.webp" },
+                { name: "iPhone 15 Pro Max", price: "32.990.000 VNĐ", img: "/pictures/iphone/ip15.webp" },
+                { name: "iPhone 14 Pro Max", price: "27.990.000 VNĐ", img: "/pictures/iphone/ip14pm.webp" },
+                { name: "iPhone 14 Pro", price: "25.990.000 VNĐ", img: "/pictures/iphone/ip14p.webp" },
+                { name: "iPhone 13 Pro", price: "15.990.000 VNĐ", img: "/pictures/iphone/ip13p.webp" },
+                { name: "iPhone 12 Pro Max", price: "14.990.000 VNĐ", img: "/pictures/iphone/ip12pm.webp" },
+                { name: "iPhone 14", price: "22.990.000 VNĐ", img: "/pictures/iphone/ip14.webp" },
+                { name: "Iphone 13", price: "14.990.000 VNĐ", img: "/pictures/iphone/ip13.webp" },
+                { name: "iPhone 14 Plus", price: "26.000.000 VNĐ", img: "/pictures/iphone/ip14pl.webp" },
+                { name: "iPhone 12 Cũ Đẹp", price: "6.990.000 VNĐ", img: "/pictures/iphone/ip12.webp" },
+                { name: "iPhone 11 Pro Max", price: "12.990.000 VNĐ", img: "/pictures/iphone/ip11pm.webp" },
+                { name: "iPhone 11 Pro", price: "10.990.000 VNĐ", img: "/pictures/iphone/ip11p.webp" },
+                { name: "iPhone XS Max", price: "8.990.000 VNĐ", img: "/pictures/iphone/XS.webp" },
+                { name: "iPhone SE 2020", price: "7.999.000 VNĐ", img: "/pictures/iphone/ipse.webp" },
+                { name: "iPhone 8 Plus", price: "2.499.000 VNĐ", img: "/pictures/iphone/ip8p.webp" }
+            ];
+            
+            document.write(products.map(product => `
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="${product.img}" class="card-img-top" alt="${product.name}">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">📱 ${product.name}</h5>
+                            <p class="card-text">Giá: ${product.price}</p>
+                            <button class="btn btn-primary">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            `).join(''));
+        </script>
+    </div>
+</div>
+<footer class="text-center text-white py-4">
+    <p>© 2025 Ifan Store - Bản quyền thuộc về cửa hàng.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

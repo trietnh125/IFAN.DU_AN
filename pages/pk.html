@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ifan Store - Phụ kiện & AppleCare</title>
+    <link rel="stylesheet" href="../styles/ac.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="main.html">📱 Ifan Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tải ứng dụng</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Chi nhánh</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">🔍</button>
+        </form>
+    </div>
+</nav>
+
+<!-- Banner -->
+<header class="text-center text-white py-5 mt-5">
+    <h1 class="intro">🔥 Chào mừng đến với Ifan Store 🔥</h1>
+    <p class="lead">Cửa hàng phụ kiện & AppleCare chính hãng - Giá tốt nhất thị trường!</p>
+</header>
+
+<div class="container my-5">
+    <div class="row g-4">
+        <script>
+            const products = [
+                // Phụ kiện
+                { name: "Magic Mouse 2", price: "1.990.000 VNĐ", img: "/pictures/ac/m.webp" },
+                { name: "Magic Keyboard", price: "2.990.000 VNĐ", img: "/pictures/ac/k.webp" },
+                { name: "Magic Trackpad", price: "3.490.000 VNĐ", img: "/pictures/ac/t.webp" },
+                { name: "Apple Pencil 2", price: "3.190.000 VNĐ", img: "/pictures/ac/p.webp" },
+                { name: "Cáp USB-C to Lightning (1m)", price: "590.000 VNĐ", img: "/pictures/ac/c.webp" },
+                { name: "Adapter sạc 20W USB-C", price: "690.000 VNĐ", img: "/pictures/ac/a.webp" },
+                { name: "AirPods Pro (2nd Gen)", price: "5.490.000 VNĐ", img: "/pictures/ac/app.webp" },
+                { name: "AirPods 3", price: "4.290.000 VNĐ", img: "/pictures/ac/ap3.webp" },
+                { name: "Ốp lưng Silicone cho iPhone 14", price: "1.190.000 VNĐ", img: "/pictures/ac/o.webp" },
+                { name: "Bàn phím Smart Keyboard Folio cho iPad", price: "5.990.000 VNĐ", img: "/pictures/ac/f.webp" },
+                { name: "Dây sạc MagSafe", price: "2.490.000 VNĐ", img: "/pictures/ac/ms.webp" },
+                { name: "AppleCare+ cho MacBook", price: "7.990.000 VNĐ", img: "/pictures/ac/ac.webp" },
+                { name: "AppleCare+ cho iPhone", price: "4.990.000 VNĐ", img: "/pictures/ac/ac.webp" },
+                { name: "AppleCare+ cho iPad", price: "3.990.000 VNĐ", img: "/pictures/ac/ac.webp" },
+            ];
+            
+            document.write(products.map(product => `
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="${product.img}" class="card-img-top" alt="${product.name}">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">📱 ${product.name}</h5>
+                            <p class="card-text">Giá: ${product.price}</p>
+                            <button class="btn btn-primary">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            `).join(''));
+        </script>
+    </div>
+</div>
+
+<footer class="text-center text-white py-4">
+    <p>© 2025 Ifan Store - Bản quyền thuộc về cửa hàng.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body {
+    background: linear-gradient(135deg, #ff004c, #10d0f2);
+  
+    align-items: center;
+    height: 100vh;
+}
+.signup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+.signup h2 {
+    text-align: center;
+    color: #007bff;
+    font-weight: bold;
+}
+button {
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
