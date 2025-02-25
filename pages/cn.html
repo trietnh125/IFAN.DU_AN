@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Nhánh - Ifan Store</title>
+    <link rel="stylesheet" href="../styles/cn.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="main.html">Ifan Store</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tải ứng dụng</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Chi nhánh</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+        </div>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </nav>
+
+    <header class="header text-center">
+        <h1>Hệ Thống Chi Nhánh - Ifan Store</h1>
+        <p>Tìm kiếm chi nhánh gần bạn nhất!</p>
+    </header>
+
+    <div class="container branch-list">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Chi Nhánh 1 -->
+            <div class="col">
+                <div class="card branch-card">
+                    <img src="../pictures/branch1.jpeg" class="card-img-top" alt="Chi Nhánh 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Chi Nhánh Hà Nội</h5>
+                        <p class="card-text">Số 123,Trần Hưng Đạo, Quận Hoàn Kiếm, Hà Nội</p>
+                        <a href="https://www.google.com/maps?q=Số+123,+Trần+Hưng+Đạo,+Hà+Nội" target="_blank" class="btn btn-primary">Xem bản đồ</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chi Nhánh 2 -->
+            <div class="col">
+                <div class="card branch-card">
+                    <img src="../pictures/branch2.jpeg" class="card-img-top" alt="Chi Nhánh 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Chi Nhánh TP.HCM</h5>
+                        <p class="card-text">Số 456, Nguyễn Huệ, Quận 1, TP.HCM</p>
+                        <a href="https://www.google.com/maps?q=Số+456,+Nguyễn+Huệ,+TPHCM" target="_blank" class="btn btn-primary">Xem bản đồ</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chi Nhánh 3 -->
+            <div class="col">
+                <div class="card branch-card">
+                    <img src="../pictures/branch 3.jpeg" class="card-img-top" alt="Chi Nhánh 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Chi Nhánh Đà Nẵng</h5>
+                        <p class="card-text">Số 789,Lê Duẩn, Quận Thanh Khê, Đà Nẵng</p>
+                        <a href="https://www.google.com/maps?q=Số+789,+Lê+Duẩn,+Đà+Nẵng" target="_blank" class="btn btn-primary">Xem bản đồ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100 container  ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.795717868036!2d106.67690311012782!3d10.8269395582164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175294d9300bec9%3A0x3707176e743f7be!2sMindX%20Technology%20School%20(Quang%20Trung)!5e0!3m2!1svi!2s!4v1740488163227!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+    </div>
+
+    <footer class="text-center text-white py-4">
+        <p>© 2025 Ifan Store - Bản quyền thuộc về cửa hàng.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

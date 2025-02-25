@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(to right, #11cbb2, #25fc66);
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  
+  .navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: blueviolet;
+  }
+
+ 
+  .btn {
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  footer {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px;
+  }
+  
