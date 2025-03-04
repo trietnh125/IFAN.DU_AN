@@ -10,6 +10,9 @@ body {
   border-radius: 10px;
   margin: 10px;
 }
+.card-img-top{
+  min-height: 400px;
+}
 .rv{
     font-size: 3rem;
     color: whitesmoke;

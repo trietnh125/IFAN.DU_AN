@@ -9,6 +9,18 @@ body {
     margin: 0;
 }
 
+.navbar {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin: 15px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: white;
+  }
+  
 .login {
     background: white;
     padding: 20px;
