@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    !-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="main.html">📱 Ifan Store</a>
@@ -29,54 +28,89 @@
             </form>
         </div>
     </nav>
-
-<!-- Banner -->
-<header class="text-center text-white py-5 mt-5">
-    <h1 class="intro">🔥 Chào mừng đến với Ifan Store 🔥</h1>
-    <p class="lead">Cửa hàng phụ kiện & AppleCare chính hãng - Giá tốt nhất thị trường!</p>
-</header>
-
-<div class="container my-5">
-    <div class="row g-4">
-        <script>
-            const products = [
-                // Phụ kiện
-                { name: "Magic Mouse 2", price: "1.990.000 VNĐ", img: "/pictures/ac/m.webp" },
-                { name: "Magic Keyboard", price: "2.990.000 VNĐ", img: "/pictures/ac/k.webp" },
-                { name: "Magic Trackpad", price: "3.490.000 VNĐ", img: "/pictures/ac/t.webp" },
-                { name: "Apple Pencil 2", price: "3.190.000 VNĐ", img: "/pictures/ac/p.webp" },
-                { name: "Cáp USB-C to Lightning (1m)", price: "590.000 VNĐ", img: "/pictures/ac/c.webp" },
-                { name: "Adapter sạc 20W USB-C", price: "690.000 VNĐ", img: "/pictures/ac/a.webp" },
-                { name: "AirPods Pro (2nd Gen)", price: "5.490.000 VNĐ", img: "/pictures/ac/app.webp" },
-                { name: "AirPods 3", price: "4.290.000 VNĐ", img: "/pictures/ac/ap3.webp" },
-                { name: "Ốp lưng Silicone cho iPhone 14", price: "1.190.000 VNĐ", img: "/pictures/ac/o.webp" },
-                { name: "Bàn phím Smart Keyboard Folio cho iPad", price: "5.990.000 VNĐ", img: "/pictures/ac/f.webp" },
-                { name: "Dây sạc MagSafe", price: "2.490.000 VNĐ", img: "/pictures/ac/ms.webp" },
-                { name: "AppleCare+ cho MacBook", price: "7.990.000 VNĐ", img: "/pictures/ac/ac.webp" },
-                { name: "AppleCare+ cho iPhone", price: "4.990.000 VNĐ", img: "/pictures/ac/ac.webp" },
-                { name: "AppleCare+ cho iPad", price: "3.990.000 VNĐ", img: "/pictures/ac/ac.webp" },
-            ];
-            
-            document.write(products.map(product => `
-                <div class="col-md-4">
-                    <div class="card product-card">
-                        <img src="${product.img}" class="card-img-top" alt="${product.name}">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">📱 ${product.name}</h5>
-                            <p class="card-text">Giá: ${product.price}</p>
-                            <button class="btn btn-primary">Mua ngay</button>
-                        </div>
+    <header class="text-center text-white py-5 mt-5">
+        <h1 class="intro">🔥 Chào mừng đến với Ifan Store 🔥</h1>
+        <p class="lead">Cửa hàng phụ kiện & AppleCare chính hãng - Giá tốt nhất thị trường!</p>
+    </header>
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="/pictures/ac/m.webp" class="card-img-top" alt="Magic Mouse 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">📱 Magic Mouse 2</h5>
+                        <p class="card-text">Giá: 1.990.000 VNĐ</p>
+                        <a href="/pages/pk_pd/mm.html"><button class="btn btn-primary">Mua ngay</button></a>
                     </div>
                 </div>
-            `).join(''));
-        </script>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="/pictures/ac/k.webp" class="card-img-top" alt="Magic Keyboard">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">📱 Magic Keyboard</h5>
+                        <p class="card-text">Giá: 2.990.000 VNĐ</p>
+                        <a href="/pages/pk_pd/mk.html"><button class="btn btn-primary">Mua ngay</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="/pictures/ac/t.webp" class="card-img-top" alt="Magic Trackpad">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">📱 Magic Trackpad</h5>
+                        <p class="card-text">Giá: 3.490.000 VNĐ</p>
+                        <a href="/pages/pk_pd/ap.html"><button class="btn btn-primary">Mua ngay</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="/pictures/ac/p.webp" class="card-img-top" alt="Apple Pencil 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">📱 Apple Pencil 2</h5>
+                        <p class="card-text">Giá: 3.190.000 VNĐ</p>
+                        <a href="/pages/pk_pd/c.html"><button class="btn btn-primary">Mua ngay</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="/pictures/ac/c.webp" class="card-img-top" alt="Cáp USB-C to Lightning (1m)">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">📱 Cáp USB-C to Lightning (1m)</h5>
+                        <p class="card-text">Giá: 590.000 VNĐ</p>
+                        <a href="/pages/pk_pd/ds.html"><button class="btn btn-primary">Mua ngay</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="/pictures/ac/a.webp" class="card-img-top" alt="Adapter sạc 20W USB-C">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">📱 Adapter sạc 20W USB-C</h5>
+                        <p class="card-text">Giá: 690.000 VNĐ</p>
+                        <a href="/pages/pk_pd/as.html"><button class="btn btn-primary">Mua ngay</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
-<footer class="text-center text-white py-4">
-    <p>© 2025 Ifan Store - Bản quyền thuộc về cửa hàng.</p>
-</footer>
+    <footer class="text-center text-white py-4">
+        <p>© 2025 Ifan Store - Bản quyền thuộc về cửa hàng.</p>
+        <p>Chuyên cung cấp các sản phẩm Apple chính hãng với giá tốt nhất.</p>
+        <p>Địa chỉ: 123 Đường ABC, Quận XYZ, TP.HCM</p>
+        <p>Hotline: 0123 456 789 | Email: contact@ifanstore.com</p>
+        <p>
+            Theo dõi chúng tôi: 
+            <a href="#" class="text-white">Facebook</a> | 
+            <a href="#" class="text-white">Instagram</a> | 
+            <a href="#" class="text-white">Twitter</a>
+        </p>
+    </footer>
+    
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
