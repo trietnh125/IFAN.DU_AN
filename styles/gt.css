@@ -4,6 +4,16 @@ body {
     font-family: Arial, sans-serif;
   }
   
+.gay{
+  width: 500px; 
+  height:500px; 
+  object-fit: contain; 
+}
+img{
+  width: 80px; 
+  height: 80px; 
+  object-fit: contain; 
+}
   .navbar {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);

@@ -68,6 +68,9 @@ p {
   color: #666;
   font-size: 18px;
 }
+.s{
+  color: white;
+}
 .btn-primary {
   background: #007bff;
   border: none;

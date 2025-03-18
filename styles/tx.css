@@ -2,21 +2,8 @@ body {
     background: linear-gradient(135deg, #00ffdd, #17ff2a);
     color: #fff;
     text-align: center;
-    padding: 5px;
 }
 
-.navbar {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    margin: 10px;
-  }
-
-  
-.container {
-    max-width: 600px;
-    margin: auto;
-}
 .app-logo {
     width: 120px;
     margin-bottom: 20px;
